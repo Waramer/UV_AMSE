@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'aboutPage.dart';
+import 'fightersPage.dart';
+import 'homePage.dart';
+import 'mediasPage.dart';
+import 'squadronsPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Fighter Pilot App',
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'My Fighter Pilot App'),
     );
@@ -32,29 +37,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Fighters',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Squadrons',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Medias',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 4: About',
-      style: optionStyle,
-    ),
+
+  static const List<Widget> _widgetPages = <Widget>[
+    HomePage(),
+    FightersPage(),
+    SquadronsPage(),
+    MediasPage(),
+    AboutPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -66,16 +55,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Navigation Bar")),
+      appBar: AppBar(title: const Text("My Fighter Pilot App")),
            body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+        child: _widgetPages.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
-            backgroundColor: Colors.indigo,
+            backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
