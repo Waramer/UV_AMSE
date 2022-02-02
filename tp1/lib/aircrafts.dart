@@ -18,15 +18,15 @@ class Aircraft {
 
 final blufor = [
   Aircraft(
-    name: "F/A-18C",
-    designer: "todo",
-    year: 2000,
-    description: "todo",
+    name: "F/A-18C Hornet",
+    designer: "McDonnell Douglas",
+    year: 1978,
+    description: "Avion de combat multirôle américain, initialement destiné à être embarqué à bord de porte-avions de l'US Navy.",
     iconImage: "../assets/topgun.jpg",
     schemeImage: "../assets/topgun.jpg",
     ),
   Aircraft(
-    name: "F-16C",
+    name: "F-16C Viper",
     designer: "todo",
     year: 2000,
     description: "todo",
@@ -37,7 +37,7 @@ final blufor = [
 
 final redfor = [
   Aircraft(
-    name: "Mig-29",
+    name: "Mig-29 Fulcrum",
     designer: "todo",
     year: 2000,
     description: "todo",
@@ -45,7 +45,7 @@ final redfor = [
     schemeImage: "../assets/topgun.jpg",
     ),
   Aircraft(
-    name: "Su-30",
+    name: "Su-30 Flanker-C",
     designer: "todo",
     year: 2000,
     description: "todo",

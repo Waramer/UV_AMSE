@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Fighter Pilot App',
+      title: 'My Fighter Encyclopedia',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'My Fighter Pilot App'),
+      home: const MyHomePage(title: 'My Fighter Encyclopedia'),
     );
   }
 
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("My Fighter Pilot App")),
+      appBar: AppBar(title: const Text("My Fighter Encyclopedia")),
            body: Center(
         child: _widgetPages.elementAt(_selectedIndex),
       ),
