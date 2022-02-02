@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'aboutPage.dart';
-import 'fightersPage.dart';
+import 'bluforPage.dart';
 import 'homePage.dart';
-import 'mediasPage.dart';
-import 'squadronsPage.dart';
+import 'likesPage.dart';
+import 'redforPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,9 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static const List<Widget> _widgetPages = <Widget>[
     HomePage(),
-    FightersPage(),
-    SquadronsPage(),
-    MediasPage(),
+    BluforPage(),
+    RedforPage(),
+    LikesPage(),
     AboutPage(),
   ];
 
@@ -67,24 +67,24 @@ class _MyHomePageState extends State<MyHomePage> {
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Fighters',
-            backgroundColor: Colors.indigo
+            icon: Icon(Icons.airplanemode_active),
+            label: 'BLUFOR',
+            backgroundColor: Colors.indigo,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Squadrons',
-            backgroundColor: Colors.deepPurple
+            icon: Icon(Icons.airplanemode_active_outlined),
+            label: 'REDFOR',
+            backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Medias',
-            backgroundColor: Colors.red
+            icon: Icon(Icons.airplanemode_active_rounded),
+            label: 'Favourites',
+            backgroundColor: Colors.purple,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.help),
             label: 'About',
-            backgroundColor: Colors.blueGrey
+            backgroundColor: Colors.blue,
           ),
         ],
         currentIndex: _selectedIndex,
