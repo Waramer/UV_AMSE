@@ -1,3 +1,8 @@
-# UV_AMSE - Web Media Development
+# UV AMSE - Web Media Development
 
-This repo contains the work done using Dart and Flutter to code applications.
+Ce projet contient plusieurs application codées en langage Dart avec le framework Flutter.  
+Ces projets sont réalisés dans le cadre de cours d'Applications Mobiles et Systèmes Embarqués. 
+
+- First App : Projet suivant les tutoriels du site officiel de FLutter.
+- TP1 : Projet d'une application regroupant des fonctionnalités simple permettant de visionner différents médias et de gérer une liste de favoris.
+- TP2 : 
