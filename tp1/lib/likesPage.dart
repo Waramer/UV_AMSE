@@ -59,7 +59,7 @@ class _LikesPageState extends State<LikesPage> {
                       style: _mySubtitleStyle,
                     ),
                     Text(
-                      "Entered service in "+aircraft.year.toString()+".", 
+                      aircraft.year.toString(), 
                       style: _mySubtitleStyle,
                     ),
                     Text(

@@ -34,7 +34,6 @@ class _RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Startup Name Generator'),
-        // Add from here ...
         actions: [
           IconButton(
             icon: const Icon(Icons.list),
@@ -42,7 +41,6 @@ class _RandomWordsState extends State<RandomWords> {
             tooltip: 'Saved Suggestions',
           ),
         ],
-        // ... to here
       ),
       body: _buildSuggestions(),
     );
@@ -121,7 +119,4 @@ class _RandomWordsState extends State<RandomWords> {
       },
     );
   }
-
-
-
 }

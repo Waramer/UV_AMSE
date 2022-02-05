@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Fighter Encyclopedia',
+      title: 'Mon Carnet de Chasseurs',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'My Fighter Encyclopedia'),
+      home: const MyHomePage(title: 'Mon Carnet de Chasseurs'),
     );
   }
 
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("My Fighter Encyclopedia")),
+      appBar: AppBar(title: const Text("Mon Carnet de Chasseurs")),
            body: Center(
         child: _widgetPages.elementAt(_selectedIndex),
       ),
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Accueil',
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
@@ -78,12 +78,12 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.airplanemode_active_rounded),
-            label: 'Favourites',
+            label: 'Favoris',
             backgroundColor: Colors.purple,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.help),
-            label: 'About',
+            label: 'Infos',
             backgroundColor: Colors.blue,
           ),
         ],

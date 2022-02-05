@@ -59,7 +59,7 @@ class _RedforPageState extends State<RedforPage> {
                       style: _mySubtitleStyle,
                     ),
                     Text(
-                      "Entered service in "+aircraft.year.toString()+".", 
+                      aircraft.year.toString(), 
                       style: _mySubtitleStyle,
                     ),
                     Text(
