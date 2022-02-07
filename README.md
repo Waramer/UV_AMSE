@@ -5,4 +5,4 @@ Ces projets sont réalisés dans le cadre de cours d'Applications Mobiles et Sys
 
 - First App : Projet suivant les tutoriels du site officiel de FLutter.
 - TP1 : Projet d'une application regroupant des fonctionnalités simple permettant de visionner différents médias et de gérer une liste de favoris.
-- TP2 : 
+- TP2 : Projet d'un jeu de Tacquin guidé à travers pluseurs étapes chacunes présentes dans l'application.
