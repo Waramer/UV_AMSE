@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'TP2',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        colorScheme: ColorScheme.highContrastDark(
+          surface: Colors.red.shade900,
+        ),
       ),
       home: const MyHomePage(title: 'Jeu de Tacquin'),
     );
@@ -35,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ListView.builder(
+        padding: const EdgeInsets.only(top:5,bottom:5),
         itemCount: exercises.length,
         itemBuilder: (context, index){
           return Card(

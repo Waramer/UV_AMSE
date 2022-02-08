@@ -7,10 +7,18 @@ class Exercise1 extends StatefulWidget {
 }
 
 class _Exercise1State extends State<Exercise1> {
+  
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Exercice 1"),
+    final double cWidth = MediaQuery.of(context).size.width;
+    return Center(
+      child: Container(
+        width: cWidth*0.9,
+        height: cWidth*0.9,
+        child: Center(
+          child: Image.asset('../assets/thewitcher3.png'),
+        ),
+      ),
     );
   }
 }
