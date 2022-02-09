@@ -21,7 +21,7 @@ const List<Exercise> exercises = [
   Exercise("Image découpée", "5b"),
   Exercise("Plateau variable", "5c"),
   Exercise("Animer deux tuiles", "6a"),
-  Exercise("Animer une plateau", "6b"),
+  Exercise("Animer un plateau", "6b"),
   Exercise("Tacquin", "7"),
 ];
 
