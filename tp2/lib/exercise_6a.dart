@@ -59,19 +59,3 @@ class TileWidget extends StatelessWidget {
     );
   }
 }
-//---------------------------------------------------
-
-class Exercise6b extends StatefulWidget {
-  const Exercise6b({Key? key,}) : super(key: key);
-  @override
-  State<Exercise6b> createState() => _Exercise6bState();
-}
-
-class _Exercise6bState extends State<Exercise6b> {
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Exercice 6b"),
-    );
-  }
-}

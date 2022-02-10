@@ -3,7 +3,8 @@ import 'package:tp2/exercise_1.dart';
 import 'package:tp2/exercise_2.dart';
 import 'package:tp2/exercise_4.dart';
 import 'package:tp2/exercise_5.dart';
-import 'package:tp2/exercise_6.dart';
+import 'package:tp2/exercise_6a.dart';
+import 'package:tp2/exercise_6b.dart';
 import 'package:tp2/exercise_7.dart';
 
 class Exercise {
