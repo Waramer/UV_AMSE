@@ -122,5 +122,4 @@ class TileWidget extends StatelessWidget {
       ),
     );
   }
-
 }

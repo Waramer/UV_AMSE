@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final double cWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -56,6 +57,21 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           );
         },
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.red.shade900,
+        icon: const Icon(Icons.play_arrow_rounded,color: Colors.white,),
+        label: const Text("Jouer",style: TextStyle(color: Colors.white),),
+        onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ExercisePage(title: "Taquin")),
+          );
+        },
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: SizedBox(height: cWidth*0.10),
       ),
     );
   }
